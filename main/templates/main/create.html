@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Create Password
+{% endblock %}
+
+{% block title1 %}
+<h1>Create Password</h1>
+{% endblock %}
+
+{% block content%}
+<div>
+    <h1 style="color:teal">Customize and create your password</h1>
+    <hr class="mt-0 mb-4">
+</div>
+<form method="post" action="/create/">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Create Password</button>
+</form>
+{% endblock %}
+

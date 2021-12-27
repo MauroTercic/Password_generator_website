@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+
+
+{% block title %}
+Create Password
+{% endblock %}
+
+{% block title1 %}
+<h1>Created password</h1>
+{% endblock %}
+
+{% block content %}
+<div>
+    <p style="text-align:left; font-family:times new roman; font-size:200%; color:teal">Your password:</p>
+    <hr class="mt-0 mb-4">
+    <p style="text-align:center; font-family:times new roman; font-size:300%">
+        {{joined_password}}
+    </p>
+    <hr class="mt-0 mb-4">
+</div>
+{% endblock %}
